@@ -11,6 +11,11 @@
     gap: 56px;
   }
 
+  .modal {
+    width: 392px;
+    min-height: 586px;
+  }
+
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -109,6 +114,11 @@
     letter-spacing: 0.02em;
     color: var(--slate);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .phone-menu,
+  .modal-phone-menu-open {
+    display: none;
   }
 
   .hero {
@@ -307,6 +317,21 @@
   .footer-subsc-wrap {
     width: 453px;
     margin-left: 80px;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 576px;
+  }
+
+  .modal-form {
+    width: 360px;
+  }
+
+  .modal-textarea {
+    display: block;
+    width: 360px;
+    height: 120px;
   }
 }
 
