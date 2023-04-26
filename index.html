@@ -22,9 +22,10 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo link" href="./index.html">
@@ -64,10 +65,90 @@
             </li>
           </ul>
         </address>
+        <button type="button" .js-open-menu class="modal-phone-menu-open">
+          <svg class="modal-phone-menu-icon" width="30" height="19">
+            <use href="./images/icons.svg#icon-phone-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
 
-    <!-- Hero image -->
+      <!------------------------------- Phone menu ------------------------------->
+
+      <div class="phone-menu is-hidden" .js-menu-container>
+        <button type="button" .js-close-menu class="modal-phone-menu-close">
+          <svg class="modal-phone-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="phone-menu-nav">
+          <ul class="phone-menu-list list">
+            <li class="phone-menu-items">
+              <a class="phone-menu-link link-items" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="phone-menu-items">
+              <a class="phone-menu-link link-items" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="phone-menu-items">
+              <a class="phone-menu-link link-items" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="phone-menu-address">
+          <ul class="phone-menu-contact-list list">
+            <li class="phone-menu-contact-items">
+              <a
+                class="phone-menu-contact-link link-items"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="phone-menu-contact-item">
+              <a
+                class="phone-menu-contact-link link-items"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="phone-menu-soc-list list">
+          <li class="phone-menu-soc-item">
+            <a class="phone-menu-soc-link link" href="">
+              <svg class="phone-menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="phone-menu-soc-item">
+            <a class="phone-menu-soc-link link" href="">
+              <svg class="phone-menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="phone-menu-soc-item">
+            <a class="phone-menu-soc-link link" href="">
+              <svg class="phone-menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="phone-menu-soc-item">
+            <a class="phone-menu-soc-link link" href="">
+              <svg class="phone-menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!------------------------------- Hero image ------------------------------->
     <main>
       <section class="hero">
         <div class="container hero-container">
@@ -78,7 +159,7 @@
         </div>
       </section>
 
-      <!-- 1-t section -->
+      <!------------------------------- 1-t section ------------------------------->
 
       <section class="technology section">
         <div class="container">
@@ -136,7 +217,7 @@
         </div>
       </section>
 
-      <!-- 2-d Section -->
+      <!------------------------------- 2-d Section ------------------------------->
 
       <section class="product section">
         <div class="container">
@@ -144,6 +225,7 @@
           <ul class="product-list list">
             <li class="product-list-items">
               <img
+                srcset="./images/monitor-2x.jpg 2x"
                 class="product-images"
                 src="./images/monitor.jpg"
                 alt="monitor"
@@ -153,6 +235,7 @@
             </li>
             <li class="product-list-items">
               <img
+                srcset="./images/menu-2x.jpg 2x"
                 class="product-images"
                 src="./images/menu.jpg"
                 alt="menu in phone"
@@ -162,6 +245,7 @@
             </li>
             <li class="product-list-items">
               <img
+                srcset="./images/phone-2x.jpg 2x"
                 class="product-images"
                 src="./images/phone.jpg"
                 alt="phone"
@@ -173,14 +257,15 @@
         </div>
       </section>
 
-      <!-- 3-d Section -->
+      <!------------------------------- 3-d Section ------------------------------->
 
       <section class="team section">
-        <div class="container">
+        <div class="container container-tab">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-list-items">
               <img
+                srcset="./images/mark-guerrero-2x.jpg 2x"
                 class="team-item-photo"
                 src="./images/mark-guerrero.jpg"
                 alt="Mark Guerrero"
@@ -222,6 +307,7 @@
             </li>
             <li class="team-list-items">
               <img
+                srcset="./images/tom-ford-2x.jpg 2x"
                 class="team-item-photo"
                 src="./images/tom-ford.jpg"
                 alt="Tom Ford"
@@ -263,6 +349,7 @@
             </li>
             <li class="team-list-items">
               <img
+                srcset="./images/camila-garcia-2x.jpg 2x"
                 class="team-item-photo"
                 src="./images/camila-garcia.jpg"
                 alt="Camila Garcia"
@@ -304,6 +391,7 @@
             </li>
             <li class="team-list-items">
               <img
+                srcset="./images/daniel-wilson-2x.jpg 2x"
                 class="team-item-photo"
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel Wilson"
@@ -349,10 +437,10 @@
       </section>
     </main>
 
-    <!-- 4-d Section -->
+    <!------------------------------- 4-d Section ------------------------------->
 
     <section class="customers section">
-      <div class="container">
+      <div class="container container-tab">
         <h2 class="customers-tittle">Customers</h2>
         <ul class="customers-list list">
           <li class="customers-item">
@@ -401,11 +489,11 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!------------------------------- Footer ------------------------------->
 
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-leftside">
+        <div class="footer-position">
           <a class="logo-footer link" href="./index.html"
             >Web<span class="footer-span">Studio</span></a
           >
@@ -469,6 +557,8 @@
         </div>
       </div>
     </footer>
+
+    <!------------------------------- Modal ------------------------------------>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -556,5 +646,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
