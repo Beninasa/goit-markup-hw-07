@@ -701,15 +701,17 @@ body {
 /*#region ------------------------------------------ Portfolio page ------------------------------------------*/
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .buttons-list {
-  margin-bottom: 72px;
+  width: 270px;
+  margin-bottom: 48px;
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px 24px;
 }
 
 .buttons-list-name:hover,
@@ -725,13 +727,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--iris);
   background: var(--cloud);
   border-radius: 4px;
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: 1px solid var(--cornflower);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -744,18 +746,17 @@ body {
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
-}
-
-.works-list li {
-  width: calc((100% - 48px) / 3);
+  gap: 48px;
 }
 
 .works-items {
-  max-width: 360px;
+  max-height: 400px;
+  width: 396px;
 }
 
 .works-link {
+  height: 100%;
+  width: 100%;
   color: var(--navy-blue);
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1285,6 +1286,33 @@ body {
     width: 360px;
     height: 120px;
   }
+
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .buttons-list {
+    width: auto;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .buttons-list-name {
+    padding: 12px 24px;
+  }
+
+  .works-list {
+    gap: 72px 24px;
+  }
+
+  .works-items {
+    min-height: 420px;
+    max-width: 356px;
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 /*#endregion---------------------------------- 768px ----------------------------------*/
@@ -1418,6 +1446,25 @@ body {
   .footer-subsc-wrap {
     width: 453px;
     margin-left: 80px;
+  }
+
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .buttons-list {
+    margin-bottom: 72px;
+  }
+
+  .works-list {
+    gap: 48px 24px;
+  }
+
+  .works-items {
+    min-height: 420px;
+    max-width: 360px;
+    width: calc((100% - 48px) / 3);
   }
 }
 
