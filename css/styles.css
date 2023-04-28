@@ -177,8 +177,10 @@ body {
 .phone-menu-nav {
   flex-grow: 1;
 }
+
 .phone-menu-list {
 }
+
 .phone-menu-items:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -193,7 +195,7 @@ body {
   text-transform: capitalize;
 }
 
-.phone-menu-items:last-child .phone-menu-link {
+.active-phone-menu {
   color: var(--ocean);
 }
 
@@ -257,7 +259,7 @@ body {
 /*#region-------------------------- Hero image --------------------------*/
 
 .hero {
-  min-width: 100%;
+  width: 100%;
   text-align: center;
   background-color: var(--navy-blue);
   background-image: linear-gradient(
@@ -342,7 +344,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  gap: 72px;
 }
 
 .technology-list-items {
@@ -1204,8 +1206,12 @@ body {
     text-align: left;
   }
 
-  .technology-list-items {
+  .technology-list {
+    align-items: flex-start;
     gap: 72px 24px;
+  }
+
+  .technology-list-items {
     width: calc((100% - 24px) / 2);
   }
 
